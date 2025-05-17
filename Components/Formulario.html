@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/formulario.css" />
+    <link rel="stylesheet" href="../Styles/globalStyles.css" />
+    <title>Contactame</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="../Assets/logo.png" />
+    </header>
+    <nav>
+      <a href="../Home.html">Home</a>
+      <a href="../Components/About.html"> Sobre mi</a>
+    </nav>
+    <form id="formulario">
+      <fieldset class="datos" name="datos">
+        <legend>DATOS PERSONALES</legend>
+        <label>Nombre</label><br />
+        <input
+          type="text"
+          placeholder="Jhon"
+          required
+          style="margin-top: 10px; margin-bottom: 10px" />
+        <br />
+        <label>Apellido</label><br />
+
+        <input type="text" placeholder="Doe" required /><br />
+        <label>Correo</label><br />
+        <input type="email" placeholder="some@some.com" required /><br />
+        <label>Edad</label><br />
+        <input type="number" placeholder="30" required /><br />
+      </fieldset>
+      <fieldset class="comentario" name="comentario">
+        <legend>COMENTARIO</legend>
+        <label>Asunto</label><br />
+        <input list="aptitudes" name="aptitud" id="aptitud" />
+        <datalist id="aptitudes">
+          <option value="Desarrollo front"></option>
+          <option value="QA"></option>
+          <option value="Desarrollo bakend"></option>
+          <option value="Soporte"></option></datalist
+        ><br />
+
+        <label class="mensaje" name="mensaje">Mensaje</label><br />
+        <textarea name="message" rows="20" cols="60"></textarea><br />
+        <button type="reset">Limpiar</button>
+        <button type="button" onclick="alert('Gracias por contactarnos!') ">
+          enviar
+        </button>
+      </fieldset>
+    </form>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#"><img src="../Assets/github.png" /></a>
+          <a href="#"><img src="../Assets/gmail.png" /></a>
+          <a href="#"><img src="../Assets/linkedin.png" />
+        </div>
+        <ul class="list-inline">
+          <li ><a href="../Home.html">Home</a></li>
+          <li ><a href="../Components/About.html">About</a></li>
+        </ul>
+        <p class="copyright">Diana Ramos - Enginner © 2025</p>
+      </footer>
+    </div>
+    <script src="../animations.js"></script>
+  </body>
+</html>
